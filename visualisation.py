@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-from matplotlib import animation
 from matplotlib.animation import FuncAnimation
 
 timestep = 1000 		#time period between iterations
