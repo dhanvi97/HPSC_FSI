@@ -105,7 +105,7 @@ int main(){
 	Map<RowMatrixXi>(&Fi_host[0][0], SIZE_I,1) = Fi;
 
 	for (int i = 0; i<3 ;i++){
-		cout<<Fe_host[0][i]<<endl;
+		cout<<Fe_host[0]<<endl;
 	}
 
 
@@ -170,9 +170,9 @@ int main(){
   
 
     int *u_new_i_device;
-    cudaMalloc((void**)&u_new_i_device, 3*sizeof(float));
+    //cudaMalloc((void**)&u_new_i_device, 3*sizeof(float));
 
-    cudaMemcpy(u_new_i_device,u_new_i_host,cudaMemcpyHostToDevice);
+    //cudaMemcpy(u_new_i_device,u_new_i_host,cudaMemcpyHostToDevice);
 
 
 
